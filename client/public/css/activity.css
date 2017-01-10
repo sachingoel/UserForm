@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+.activiityCoverPanel{ position:relative; text-align:center; display:inline-block; width:100%; margin-bottom:20px; max-height:650px; overflow:hidden; color:#fff;}
+.activiityCoverPanel .coverImageArea{ float:left; width:100%; position:relative; }
+.activiityCoverPanel .coverImageArea:before{ position:absolute; top:0; bottom:0; right:0; left:0; background:rgba(0,0,0,0.30); content:'';}
+.activiityCoverPanel .activityPreviewContainer{ position:absolute; top:50%; width:100%; color:#fff; }
+.activiityCoverPanel .activityPreviewContainer h1{ font-weight:700; line-height:45px;}
+
+
+.activityHeadingPanel{ text-align:center; color:#323232; margin:40px 0;}
+.activityHeadingPanel h1{ font-weight:700; line-height:45px;}
+.activityHeadingPanel .actAuthorDetail { float:left; width:100%; margin:20px 0; font-size:14px; font-weight:600;}
+.activityHeadingPanel .actAuthorDetail .authorImage {    border: 1px solid #ccc; vertical-align:middle; border-radius: 50%; display:inline-block;    overflow: hidden; width: 30px; margin-right:10px;}
+.activityHeadingPanel .actAuthorDetail .authorName{ display:inline-block;}
+.activityHeadingPanel .actAuthorDetail .authorName span{ font-weight:700;}
+
+.actMiddle{ min-height:700px;}
+.actMiddle .actLeftContent{ width:70%; float:left;}
+.actMiddle .actLeftContent .actUthorNameProfile{ float:left; width:100%; margin-bottom:10px;}
+.actMiddle .actLeftContent .actUthorNameProfile .profilePic{ display:inline-block; vertical-align:middle; width:40px; overflow:hidden; border-radius:50%; border:1px solid #ccc;}
+.actMiddle .actLeftContent .actUthorNameProfile .authorName{ display:inline-block; margin-left:10px;}
+.actMiddle .actLeftContent .actUthorNameProfile .authorName span{ font-weight:700;}
+
+.actMiddle .actLeftContent .DiscriptionPanel{ float:left; width:100%; margin:10px 0 20px;}
+.actMiddle .actLeftContent .DiscriptionPanel h3{ float:left; width:100%; margin-bottom:10px; font-weight:700; text-transform:uppercase;}
+.actMiddle .actLeftContent .DiscriptionPanel .discriptionText{ float:left; width:100%;}
+.actMiddle .actLeftContent .DiscriptionPanel .discriptionText p{ margin-bottom:10px;}
+
+.actMiddle .actLeftContent .tagPanel{ float:left; width:100%; margin-bottom:20px;}
+.actMiddle .actLeftContent .tagPanel h4{ float:left; width:100%; font-weight:700; margin-bottom:20px;}
+.actMiddle .actLeftContent .tagPanel ul li{ float:left; margin-right:15px; padding:6px 8px; font-size:13px;  background:#e3e3e3; color:#444; border-radius:10px; cursor:pointer; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; }
+.actMiddle .actLeftContent .tagPanel ul li:hover{ background:#EA4848; color:#fff; }
+
+.actRightContent{ float:right; width:28%}
+.actOverviewBox{ float:left; width:100%; border:1px solid #e3e3e3; border-radius:0px; margin-bottom:20px;}
+.actOverviewBox .title{ text-transform:uppercase; font-weight:700; float:left; width:100%; padding:8px 10px 8px; margin-bottom:0px; border-bottom:1px dashed #e3e3e3;}
+.actOverviewBox .actContent{ float:left; width:100%; padding:10px; }
+.actOverviewBox .actContent .actTable{ border:1px solid #e3e3e3; float:left; width:100%; border-radius:0px;}
+.actOverviewBox .actContent .row{float:left; width:100%; border-top:1px solid #e5e7e8; font-size:13px;}
+.actOverviewBox .actContent .row:first-child{border-top:none;}
+.actOverviewBox .actContent .row .actEveHead{ background:#777; color:#fff; width:30%; float:left; padding:10px 6px; border-right:1px solid #e5e7e8;}
+.actOverviewBox .actContent .row .actEveCont{ padding:10px 6px; width:70%; float:left; font-weight:700;}
+
+.actrelatedCause{ float:left; width:100%;}
+.actrelatedCause .title{text-transform:uppercase; font-weight:700; float:left; width:100%; padding:10px 0; margin-bottom:0px;}
+.actrelatedCause .causeBox{ float:left; width:100%; position:relative; margin-bottom:20px;}
+.actrelatedCause .causeBox .causeImg{ float:left; width:100%;}
+.actrelatedCause .causeBox .causeFoCont{ float:left; width:100%; position:absolute; bottom:0; background:rgba(0,0,0,0.60); color:#fff; padding:10px;}
+.actrelatedCause .causeBox .causeFoCont .causeName{ float:left; font-weight:700; margin:8px 0 0; }
+.actrelatedCause .causeBox .causeFoCont .causeBtn{ float:right; }
+.actrelatedCause .causeBox .causeFoCont .causeBtn .btn{ padding:8px 20px; background:#ea4848; float:left; color:#fff; }
+.actrelatedCause .causeBox .causeFoCont .causeBtn .btn:hover{ background:#ca1b1b;}

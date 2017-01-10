@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+.lrPopupPanel{ background:#fff; position:absolute; top:40px; z-index:10002; left:50%; width:400px; margin-left:-200px; padding-bottom:20px;border:1px solid #CCCCCC; box-shadow:0 0 10px #ccc;}
+.lrPopupPanel .popupTitlePanel{ float:left; width:100%; text-align:center; border-bottom:1px solid #cdcdcd; padding:20px 0; margin-bottom:20px;}
+.lrPopupPanel .popupTitlePanel h2{ font-weight:700; font-size:24px; color:#444444; margin-bottom:15px;}
+.lrPopupPanel .popupTitlePanel .subTitle{ color:#505050; font-size:16px; float:left; width:100%;}
+.lrPopupPanel .formHorizontal{ float:left; width:100%; padding:0 20px;}
+.lrPopupPanel .formHorizontal .formGroup{ float:left; width:100%; margin-bottom:10px;}
+.lrPopupPanel .formHorizontal .formGroup label{ float:left; width:100%; margin-bottom:10px; }
+.lrPopupPanel .formHorizontal .formGroup label span{ color:#EA4848;}
+.lrPopupPanel .formHorizontal .formGroup .formInput{ float:left; width:100%; border:1px solid #cacaca; position:relative;}
+.lrPopupPanel .formHorizontal .formGroup .formInput i{ position:absolute; left:8px; top:8px; color:#a5a5a5; font-size:18px;}
+.lrPopupPanel .formHorizontal .formGroup .formInput input{ padding:10px 10px 10px 30px; float:left; width:100%; border:none; outline:none; color:#828080;}
+.lrPopupPanel .formHorizontal .formGroup.ocerror .formInput { border:1px solid #EA4848;}
+.lrPopupPanel .formHorizontal .formGroup.ocerror .formInput i{ color:#EA4848;}
+.lrPopupPanel .TnCformGroup{ float:left; text-align:center; width:100%; margin-top:10px; font-size:12px;}
+.lrPopupPanel .TnCformGroup a{ color:#2482ed;}
+.lrPopupPanel .OthLinks{ float:left; text-align:center; width:100%; margin:20px 0;}
+.lrPopupPanel .OthLinks li{ border-left:1px solid #CDCDCD; padding:0 10px; display:inline-block;}
+.lrPopupPanel .OthLinks li:first-child{ border-left:none;}
+.lrPopupPanel .OthLinks a{ color:#2482ed; font-size:13px;}
+.lrPopupPanel .crossPanel{ position:absolute; top:10px; right:10px; font-size:20px; color:#EA4848;}
+.formHorizontal .error{ background:rgba(234,72,72,0.51); float:left; width:100%; padding:5px 10px; text-align:left; color:#fff; margin:10px 0 0;}
