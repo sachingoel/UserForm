@@ -27,10 +27,14 @@
 					<span class="msg" ng-show="userForm.email.$dirty && userForm.email.$invalid">Email Address is not valid</span>
 
 
+					<label class="control-label">  Your Date Of Birth </label>
+					<input class="form-control" type="date" name="dob" ng-model='userCtrl.user.dob' required >
+					<span class="msg" ng-show="userForm.dob.$dirty && userForm.age.$error.required">DOB is required</span>
+					</br>
+
 
 					<label class="control-label">Age</label>
-					<input class="form-control" type="number" name="age" ng-model='userCtrl.user.age' min="18" max ="65" required>
-					<span class="msg" ng-show="userForm.age.$dirty && userForm.age.$error.required">Age is required</span>
+					<input class="form-control" type="number" name="age" value="{{calculateAge(userCtrl.user.dob)}}" ng-model='userCtrl.user.age' min="18" max ="65" >
 					<span class="msg" ng-show="userForm.age.$dirty && userForm.age.$error.min">You should be above 18</span>
 					<span class="msg" ng-show="userForm.age.$dirty && userForm.age.$error.max">You should be below 65</span>
 
@@ -40,10 +44,7 @@
 					<input type="radio" name="gender" value="Female" ng-model='userCtrl.user.gender' >Female</input>
 					<input type="radio" name="gender" value="Other" ng-model='userCtrl.user.gender'>Other</input></br>
 					
-					<label class="control-label">  Your Date Of Birth </label>
-					<input class="form-control" type="date" name="dob" ng-model='userCtrl.user.dob' required >
-					<span class="msg" ng-show="userForm.dob.$dirty && userForm.age.$error">DOB is required</span>
-					</br>
+					
 					<label class="control-label">Enter Your Address</label>
 					<input class="form-control" type="text" ng-model="userCtrl.user.address.subaddress" placeholder="Enter Your House Number and Locality">
 					<input class="form-control" type="text" ng-model="userCtrl.user.address.city" placeholder="Enter Your City">

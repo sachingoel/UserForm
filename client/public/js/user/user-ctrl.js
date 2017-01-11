@@ -21,6 +21,13 @@ $scope.userCtrl = {
 			})
 		};
 
+
+		$scope.calculateAge = function calculateAge(birthday) { // birthday is a string
+    		var ageDifMs = Date.now() - new Date(birthday).getTime(); // parse string to date
+    		var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    		return Math.abs(ageDate.getUTCFullYear() - 1970);
+		};
+
 		$scope.toggle = function(arg){
 			$scope.toggleShow=arg;
 		};
