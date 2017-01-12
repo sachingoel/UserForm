@@ -70,10 +70,10 @@
 					<option  value="NIOS">NIOS</option>
 					<option  value="UP Board">UP Board</option>
 					<option  value="Other">Other</option>
-				</select>
+				</select>{{userCtrl.user.academics.tenth.board}}
 				<div ng-if="userCtrl.user.academics.tenth.board === 'Other'">
 					<label class="control-label">Specify Board</label>
-					<input type="text" class="form-control" ng-model="userCtrl.user.academics.tenth.otherBoard" >
+					<input type="text" name="tenOther" class="form-control" ng-model="userCtrl.tenOtherBoard">	
 				</div>
 			</br>
 
@@ -93,7 +93,7 @@
 			</select>
 			<div ng-if="userCtrl.user.academics.twelve.board=='Other'">
 				<label class="control-label">Specify Board</label>
-				<input type="text" class="form-control" ng-model="userCtrl.user.academics.twelve.board">
+				<input type="text" name="tweOther"class="form-control" ng-model="userCtrl.tweOtherBoard">
 			</div>
 		</div>
 
