@@ -60,9 +60,9 @@
 				</br>
 				<label id ="label" class="control-label">Higher Secondary Details</label></br>
 				<label class="control-label">Percentage</label>
-				<input class="form-control" type="number" name="10cent" ng-model="userCtrl.user.academics.tenth.marks" placeholder="Obtained Percentage" max=100 >
-				<!-- <span class="msg" ng-show="userForm.10cent.$dirty && userForm.zipcode.$error.max">Percentage should be less than 100</span>
- -->
+				<input class="form-control" type="number" name="tenCent" ng-model="userCtrl.user.academics.tenth.marks" placeholder="Obtained Percentage" max="100" >
+				<span class="msg" ng-show="userForm.tenCent.$dirty && userForm.tenCent.$error.max">Percentage should be less than 100</span>
+
 				<label class="control-label">Select Board</label>
 				<select class="form-control" name="tenthBoard" ng-model="userCtrl.user.academics.tenth.board">
 					<option  value="CBSE">CBSE</option>
@@ -70,7 +70,7 @@
 					<option  value="NIOS">NIOS</option>
 					<option  value="UP Board">UP Board</option>
 					<option  value="Other">Other</option>
-				</select>{{userCtrl.user.academics.tenth.board}}
+				</select>
 				<div ng-if="userCtrl.user.academics.tenth.board === 'Other'">
 					<label class="control-label">Specify Board</label>
 					<input type="text" name="tenOther" class="form-control" ng-model="userCtrl.tenOtherBoard">	
@@ -79,9 +79,9 @@
 
 			<label id ="label" class="control-label">Senior Secondary Details</label></br>
 			<label class="control-label">Percentage</label>
-			<input type="number" class="form-control" ng-model="userCtrl.user.academics.twelve.marks" placeholder="Obtained Percentage"  max=100 name="12cent">
+			<input type="number" class="form-control" ng-model="userCtrl.user.academics.twelve.marks" placeholder="Obtained Percentage"  max=100 name="tweCent">
 
-			<!-- <span class="msg" ng-show="userForm.12cent.$dirty && userForm.zipcode.$error.max">Percentage should be less than 100</span> -->
+			<span class="msg" ng-show="userForm.tweCent.$dirty && userForm.tweCent.$error.max">Percentage should be less than 100</span>
 
 			<label class="control-label">Select Board</label>
 			<select class="form-control" name="twelveBoard" ng-model="userCtrl.user.academics.twelve.board" >
@@ -102,31 +102,31 @@
 		<div ng-show="toggleShow=='Extracurricular Activities'">
 
 
-	<!-- <div data-ng-repeat="div in divs">
+	<div data-ng-repeat="div in divs">
 		<label class="control-label">Activity</label>
 		<input class="form-control" type="text" name="activity" ng-model="userCtrl.user.extracurricular.activity[$index]">
 		<label class="control-label">Duration</label>
-		</br>From:
-		<input class="form-control" type="date" name="from" ng-model="userCtrl.user.extracurricular.year.from">
+		</br>&emsp;&emsp;&nbsp;From:
+		<input type="date" name="from" ng-model="userCtrl.user.extracurricular.year.from">&emsp; &nbsp;&nbsp;
 		To:
-		<input class="form-control" type="date" name="to" ng-model="userCtrl.user.extracurricular.year.to">
-		<label class="control-label">Award</label>
+		<input type="date" name="to" ng-model="userCtrl.user.extracurricular.year.to">
+		</br><label class="control-label">Award</label>
 		<input class="form-control" type="text" name="award" ng-model="userCtrl.user.extracurricular.award[$index]">
 	</div>
 	</br>
 	
-	<button class="form-control" class="btn btn-success" ng-click="addDivs()">Add More Activity</button> -->
+	<button class="form-control" class="btn btn-success" ng-click="addDivs()">Add More Activity</button>
 
-	<label class="control-label" class="control-label" >Activity</label>
+	<!-- <label class="control-label" class="control-label" >Activity</label>
 	<input class="form-control" type="text" name="activity" ng-model="userCtrl.user.extracurricular.activity">
 
 	<label class="control-label">Duration</label>
-	</br>From:
-	<input class="form-control" type="date" name="from" ng-model="userCtrl.user.extracurricular.year.from">
+	</br> &nbsp;&nbsp;From:
+	<input  type="date" name="from" ng-model="userCtrl.user.extracurricular.year.from" width="50%"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
 	To:
-	<input class="form-control"type="date" name="to" ng-model="userCtrl.user.extracurricular.year.to">
-	<label class="control-label">Award</label>
-	<input class="form-control"type="text" name="award" ng-model="userCtrl.user.extracurricular.award">
+	<input  type="date" name="to" ng-model="userCtrl.user.extracurricular.year.to">
+	</br><label class="control-label">Award</label>
+	<input class="form-control" type="text" name="award" ng-model="userCtrl.user.extracurricular.award"> -->
 
 </div>
 </br></br>

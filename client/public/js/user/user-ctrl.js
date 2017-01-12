@@ -7,10 +7,10 @@ angular.module('user',[]).config(($stateProvider)=>{
 }).controller('UserCtrl',function($scope,$state,UserService){
 		console.log('UserCtrl');
 $scope.userCtrl = {
-	user:{}	
+	user:{}
 }
 
-//console.log('User inside the controller and outside submit method is',$scope.userCtrl.user.academics.tenth.board);
+ $scope.divs=[1];
 
 
 		$scope.submitDetails = function(){
@@ -35,10 +35,6 @@ $scope.userCtrl = {
     		var ageDifMs = Date.now() - new Date(birthday).getTime(); // parse string to date
     		var ageDate = new Date(ageDifMs); // miliseconds from epoch
     		return Math.abs(ageDate.getUTCFullYear() - 1970);
-		};
-
-		$scope.tenBoard = function(){
-			$scope.userCtrl.user.academics.tenth.board = $scope.userCtrl.user.academics.tenth.otherBoard;
 		};
 
 		$scope.toggle = function(arg){

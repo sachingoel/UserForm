@@ -34,7 +34,7 @@ exports.register = (server,options,next)=>{
 				validate:{
 					payload:{
 						name:Joi.string().required().min(5).max(25),
-						age:Joi.number().required().greater(18).less(65),
+						age:Joi.number().required().greater(17).less(66),
 						gender:Joi.string(),
 						email:Joi.string().email(),	
 						dob:Joi.date(),
