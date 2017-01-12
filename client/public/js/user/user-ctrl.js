@@ -24,7 +24,7 @@ $scope.userCtrl = {
 
 			UserService.submitDetails($scope.userCtrl.user).success((response)=>{
 				alert('Your details are submitted successfully')
-				//$state.reload()
+				$state.reload()
 			}).error((response)=>{
 				console.log('Error in user data submision ',response)
 			})
